@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 
-const API_BASE = 'http://localhost:5000/api';
+import './App.css'; 
 
+const API_BASE =  import.meta.env.VITE_API_URL;
 function App() {
   const [puzzle, setPuzzle] = useState([]);
   const [solution, setSolution] = useState([]);
